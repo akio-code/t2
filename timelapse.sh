@@ -9,7 +9,7 @@ function t2()
 	FRAMES=312
 
 	# Setting camera
-	gphoto2 --set-config autopoweroff=0
+	#gphoto2 --set-config autopoweroff=0
 	gphoto2 --set-config reviewtime=0
 	gphoto2 --set-config imageformat=9
 	gphoto2 --set-config drivemode=0
