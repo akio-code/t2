@@ -17,6 +17,7 @@ function t2()
 	gphoto2 --set-config iso=0
 	gphoto2 --set-config aeb=0
 	gphoto2 --set-config meteringmode=2
+	gphoto2 --set-config capturetarget=1
 
 	# Timelapse
 	INTERVAL=$((TIME / FRAMES))
