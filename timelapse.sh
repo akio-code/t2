@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function timelapse2()
+function t2()
 {
 	echo "timelapse $1s"
 
