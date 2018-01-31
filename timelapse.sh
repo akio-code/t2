@@ -24,6 +24,6 @@ function t2()
 	gphoto2 --capture-image --interval $INTERVAL --frames $FRAMES
 
 	# NOIR
-	raspistill -t $1 -tl $INTERVAL -o image%04d.jpg
+	raspistill -t $1 -tl $INTERVAL -o ./noir_t/image%04d.jpg
 
 }
