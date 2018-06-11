@@ -2,11 +2,11 @@
 
 function t2()
 {
-	echo "timelapse $1s"
+	echo "timelapse $1s $2s"
 
 	# Timelase settings
 	TIME=$1
-	FRAMES=312
+	FRAMES=$2 * 24
 
 	# Setting camera
 	#gphoto2 --set-config autopoweroff=0
@@ -22,8 +22,4 @@ function t2()
 	# Timelapse
 	INTERVAL=$((TIME / FRAMES))
 	gphoto2 --capture-image --interval $INTERVAL --frames $FRAMES
-
-	# NOIR
-	raspistill -t $1 -tl $INTERVAL -o ./noir_t/image%04d.jpg
-
 }
